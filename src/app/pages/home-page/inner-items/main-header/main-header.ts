@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
-
+import { MatIconModule } from '@angular/material/icon';
 
 @Component({
   selector: 'app-main-header',
-  standalone: true,           // 👈 if you want standalone
-  imports: [],                // 👈 only if using standalone + importing other modules
+  standalone: true,
+  imports: [
+    MatIconModule   // ✅ use the module
+  ],
   templateUrl: './main-header.html',
   styleUrls: ['./main-header.scss']
 })
