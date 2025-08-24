@@ -1,0 +1,22 @@
+.container {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 16px;
+}
+
+.example-tab-icon {
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+/* Change active tab color */
+::ng-deep .mat-mdc-tab.mdc-tab--active .mdc-tab__text-label {
+  color: #1976d2 !important;  /* blue active text */
+  font-weight: 600;
+}
+
+/* Change active tab underline */
+::ng-deep .mat-mdc-tab-indicator .mat-mdc-tab-indicator-content {
+  background-color: #1976d2 !important; /* blue underline */
+}
