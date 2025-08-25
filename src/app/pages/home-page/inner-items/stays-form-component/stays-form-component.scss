@@ -3,9 +3,10 @@
   min-height: 50px;
   background-color: var(--orange-color);
   padding: 5px;
+  display: flex;
 }
 .destination {
-  width: 30%;
+  width: 35%;
   height: 40px;
   display: flex;
   align-items: center;
@@ -24,4 +25,31 @@
 
 .search:focus{
   outline: none;
+}
+
+.dates{
+  width: 25%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  background-color: var(--light-color);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.separator{
+  width: 5px;
+}
+
+.visitor{
+  width: 25%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  background-color: var(--light-color);
+  padding: 5px;
+  border-radius: 5px;
+  mat-icon {
+    color: var(--gray-color);
+  }
 }
