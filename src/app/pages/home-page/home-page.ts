@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
-import {MainHeader} from './inner-items/main-header/main-header';
-import {OptionsComponent} from './inner-items/options-component/options-component';
-import {OffersComponent} from './inner-items/offers-component/offers-component';
+import { HomeTrendingDestinations } from './inner-items/home-trending-destinations/home-trending-destinations';
+import { MainHeader } from './inner-items/main-header/main-header';
+import { OffersComponent } from './inner-items/offers-component/offers-component';
+import { OptionsComponent } from './inner-items/options-component/options-component';
 
 @Component({
   selector: 'app-home-page',
@@ -9,7 +10,8 @@ import {OffersComponent} from './inner-items/offers-component/offers-component';
   imports: [
     MainHeader,
     OptionsComponent,
-    OffersComponent
+    OffersComponent,
+    HomeTrendingDestinations
   ],                // 👈 only if using standalone + importing other modules
   templateUrl: './home-page.html',
   styleUrls: ['./home-page.scss']
