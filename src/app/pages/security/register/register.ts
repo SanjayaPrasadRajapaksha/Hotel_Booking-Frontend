@@ -7,7 +7,7 @@ import { MatInputModule } from '@angular/material/input';
 import { RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'app-login',
+  selector: 'app-register',
   standalone: true, 
   imports: [
     MatFormFieldModule,
@@ -17,9 +17,9 @@ import { RouterModule } from '@angular/router';
     MatCheckboxModule,
     RouterModule
   ],
-  templateUrl: './login.html',
-  styleUrl: './login.scss'
+  templateUrl: './register.html',
+  styleUrl: './register.scss'
 })
-export class Login {
-showStatus: boolean = false;
+export class Register {
+  showStatus: boolean = false;
 }
