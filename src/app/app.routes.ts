@@ -8,6 +8,7 @@ import { RegisterVerification } from './pages/security/register-verification/reg
 import { ForgotPassword } from './pages/security/forgot-password/forgot-password';
 import { ResetPwdVerification } from './pages/security/reset-pwd-verification/reset-pwd-verification';
 import { ResetPwd } from './pages/security/reset-pwd/reset-pwd';
+import { Settings } from './pages/settings/settings';
 
 export const routes: Routes = [
      { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -21,9 +22,10 @@ export const routes: Routes = [
                { path: 'register-verification/:email', component: RegisterVerification },
                { path: 'reset-pwd-verification/:email', component: ResetPwdVerification },
                { path: 'reset-pwd', component: ResetPwd },
-
           ]
+        
      },
+     { path: 'settings', component: Settings },
      { path: '**', component: NotFoundPage },
 
 
