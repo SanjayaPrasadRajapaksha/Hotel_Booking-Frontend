@@ -6,6 +6,7 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatInputModule } from '@angular/material/input';
 import {provideNativeDateAdapter} from '@angular/material/core';
 import {MatMenuModule} from '@angular/material/menu';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-stays-form-component',
@@ -16,7 +17,8 @@ import {MatMenuModule} from '@angular/material/menu';
     MatFormFieldModule,   // for <mat-form-field>
     MatDatepickerModule,  // for datepicker & date range
     MatInputModule,
-    MatMenuModule// required for <input matInput>
+    MatMenuModule,// required for <input matInput>
+    RouterModule
   ],
   providers: [provideNativeDateAdapter()],
   changeDetection: ChangeDetectionStrategy.OnPush,
